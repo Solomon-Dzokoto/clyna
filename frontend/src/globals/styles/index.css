@@ -1,0 +1,60 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: false;
+}
+
+@theme {
+  --color-primary: #175cd3;
+  --color-secondary: #002473;
+  --color-border-color: #bcbdc3;
+  --font-family: "Poppins", sans-serif;
+  --font-size: 16px;
+  --font-weight: 400;
+  --color-dashboard-card-color: #F2F2F2;
+  --color-content-secondary: #333333;
+  --color-dashboard-fields: #999999
+}
+
+@layer base {
+  @apply text-[#030303]   bg-white;
+  @apply font-[var(--font-family)];
+  @apply text-base;
+  @apply leading-normal;
+  @apply tracking-normal;
+  @apply transition-all duration-300 ease-in-out;
+  @apply border-gray-300;
+  @apply shadow-md;
+  @apply focus:outline-none;
+}
+
+:root {
+  --font-family: "Poppins", sans-serif;
+  --font-size: 16px;
+  --font-weight: 400;
+}
+
+.PhoneInput {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.PhoneInputInput {
+  border: none;
+  outline: none;
+  padding: 8px;
+  flex: 1;
+  font-size: 1rem;
+  background: transparent;
+}
+
+.PhoneInputInput:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.PhoneInputCountry {
+  margin-right: 8px;
+}
