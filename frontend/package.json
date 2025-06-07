@@ -6,7 +6,7 @@
   "packageManager": "pnpm@9.1.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --debug",
+    "build": "vite build --debug && cp public/_redirects dist/_redirects",
     "lint": "eslint .",
     "preview": "vite preview"
   },
