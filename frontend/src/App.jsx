@@ -15,6 +15,7 @@ import {
   EmailConfirmation,
   ForgetPassword,
 } from "./components/auth/index";
+import Dashboard from "./pages/Dashboard";
 
 const App = () => {
   const setCountries = useCountriesStore((state) => state.setCountries);

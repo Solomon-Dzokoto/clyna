@@ -9,38 +9,30 @@ import Hero from "../components/landing-page/Hero";
 import PlansSection from "../components/landing-page/PlansSection";
 import CallToActionSection from "../components/landing-page/CallToActionSection";
 import Card from "../components/ui/DashboardCard";
-import { FaAngleDown, FaCalendar, FaMagnifyingGlass, FaUsers } from "react-icons/fa6";
+import {
+  FaAngleDown,
+  FaCalendar,
+  FaCircleExclamation,
+  FaMagnifyingGlass,
+  FaUsers,
+} from "react-icons/fa6";
 import { DashboardHeading } from "../components/ui/DashboardHeading";
-import { SelectionField, TextField } from "../components/ui/DashboardFields";
-import { FaCalendarAlt } from "react-icons/fa";
+import {
+  DateField,
+  SelectionField,
+  TextField,
+} from "../components/ui/DashboardFields";
+import { FaCalendarAlt, FaCheckCircle, FaComment } from "react-icons/fa";
+import DashboardCard from "../components/ui/DashboardCard";
+import DashboardCardContainer from "../components/Wrappers/DashboardCardContainer";
+import { DashboardFieldsContainer } from "../components/Wrappers/DashboardFieldsContainer";
+import Dashboard from "./Dashboard";
 
-const LandingPage = () => (
-  <div className=" flex flex-col min-h-dvh    ">
-    <Nav />
-    <AnimateSection>
-      <Hero />
-    </AnimateSection>
-    <AnimateSection>
-      <HealthlineFeatures />
-    </AnimateSection>
-    <AnimateSection>
-      <HardworkingSection />
-    </AnimateSection>
-    <AnimateSection>
-      <PlansSection />
-    </AnimateSection>
-    <AnimateSection>
-      <Testimonials />
-    </AnimateSection>
-    <AnimateSection>
-      <FAQSection />
-    </AnimateSection>
-    <AnimateSection>
-      <CallToActionSection />
-    </AnimateSection>
-    <Footer />
-  </div>
-);
+const LandingPage = () => {
+  return(
+    <Dashboard/>
+  )
+}
 
 export default LandingPage;
 // This is a placeholder for the landing page content.

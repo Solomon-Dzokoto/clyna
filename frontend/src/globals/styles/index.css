@@ -12,7 +12,8 @@
   --font-weight: 400;
   --color-dashboard-card-color: #F2F2F2;
   --color-content-secondary: #333333;
-  --color-dashboard-fields: #999999
+  --color-dashboard-fields: #999999;
+  --color-dashboard-icon: #1A1A1A
 }
 
 @layer base {
@@ -57,4 +58,8 @@
 
 .PhoneInputCountry {
   margin-right: 8px;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
 }
