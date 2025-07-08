@@ -59,6 +59,7 @@ const App = () => {
         <Route path="/email-confirmation" element={<EmailConfirmation />} />
         <Route path="/verify-email" element={<EmailVerify />} />
         <Route path="*" element={<NotFoundPage />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </div>
   );
