@@ -7,6 +7,7 @@ import LandingPage from "./pages/LandingPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import { fetchCountries } from "./api/countries";
 import useCountriesStore from "./store/useCountries";
+import PatientDirectory from "./pages/PatientDirectory/PatientDirectory";
 import {
   CheckEmail,
   PasswordResetSuccess,
@@ -53,6 +54,7 @@ const App = () => {
           <Route path="resetsuccess" element={<PasswordResetSuccess />} />
           <Route path="check" element={<CheckEmail />} />
           <Route path="forgot-password" element={<ForgetPassword />} />
+          <Route path="/patients" element={<PatientDirectory />} />
         </Route>
 
         <Route path="/email-confirmation" element={<EmailConfirmation />} />
